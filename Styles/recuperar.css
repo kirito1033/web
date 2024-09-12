@@ -1,0 +1,101 @@
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #053543;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--encabezados-piedepagina);
+}
+
+.titulo{
+    color: var(--Color--texto);
+}
+
+body, div{
+    box-sizing: border-box;
+}
+
+
+.recuperar__container{
+    font-size: 22px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 80vh;
+    justify-content: space-evenly;
+    padding: 20px;
+    color: var(--Color--texto);
+    font-weight: 400;
+}
+.logo-recuperar{
+    display: flex;
+    justify-content: center;
+}
+.recuperar{
+    text-align: center;
+    width: 100%;
+}
+.modal-body{
+    color: #020f1f;
+}
+.recuperar--ingreso{
+    display: flex;
+    flex-direction: column;
+    margin: inherit;
+    border: 1px solid rgb(71, 49, 92);
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+#boton1, #boton3{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+#boton1:hover, #boton3:hover{
+    background-color: #392f42;
+    border: 1px solid rgb(71, 49, 92);
+}
+
+.recuperar__codigo, #boton3{
+    display: none;
+}
+#error__p{
+    border: none;
+    color: #a02222;
+    background-color: transparent;
+    display: none;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (min-width: 768px) {
+    .login-container {
+        max-width: 500px;
+        padding: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-container {
+        max-width: 600px;
+        padding: 60px;
+    }
+}

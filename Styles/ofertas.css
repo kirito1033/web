@@ -1,0 +1,57 @@
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #053543;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+
+.productos-oferta-row{
+    background-color: var(--Color--texto);
+    padding: 2%;
+    margin-top: 2%;
+    border: 1px solid #020f1f;
+    border-radius: 10px;
+}
+
+.productos-oferta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-ofertas{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    border: 1px solid #020f1f;
+    border-radius: 5px;
+    padding: 3%;
+
+
+}
+.col-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.link-info{
+    color: #020f1f;
+
+}
+
+h1{
+    margin-bottom: 2%;
+}
+.link-info-ofertas{
+    margin-top: 2%;
+}
+.link-info-ofertas:hover{
+    color: #048d94;
+}

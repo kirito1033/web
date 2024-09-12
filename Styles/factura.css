@@ -1,0 +1,25 @@
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #053543;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+.factura-main{
+    text-align: center;
+    margin-top: 2%;
+    background-color: var(--Color--texto);
+
+}
+p{
+    margin: 2%;
+}
+h1{
+    margin-bottom: 2%;
+}

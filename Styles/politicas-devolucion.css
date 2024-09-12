@@ -1,0 +1,95 @@
+/* Estilos generales para la página */
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: var(--encabezados-piedepagina);
+    color: #333;
+}
+
+.condiciones-logo{
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    color: var(--Color--texto);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: var(--Color--texto);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p, ul {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Enlaces */
+a {
+    font-weight: 800;
+    color: var(--Color--texto);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #590974;
+    text-decoration: underline;
+}
+
+/* Estilos específicos para las secciones */
+.condiciones-uso, .envios-devoluciones {
+    background-color: var(--encabezados-piedepagina);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.condiciones-uso h2, .envios-devoluciones h2 {
+    border-bottom: 2px solid #51425f;
+    padding-bottom: 10px;
+}
+
+.condiciones-uso h3, .envios-devoluciones h3 {
+    border-bottom: 1px solid #cad1c3;
+    padding-bottom: 5px;
+}
+
+/* Estilo para los párrafos y listas */
+.condiciones-uso p, .envios-devoluciones p, .condiciones-uso ul, .envios-devoluciones ul {
+    color: var(--Color--texto);
+}
+
+/* Estilo para el texto fuerte */
+strong {
+    color: var(--Color--texto);
+}
+
+/* Estilo para hover en el contenedor principal */
+.condiciones-uso:hover, .envios-devoluciones:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,90 @@
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #053543;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--encabezados-piedepagina);
+    min-height: 100vh;
+    
+}
+
+body, div {
+    box-sizing: border-box;
+}
+
+.registrar-container {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    color: var(--Color--texto);
+    border-radius: 8px;
+    margin: auto;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registrar--ingreso {
+    margin-top: 5px;
+    border: 1px solid rgb(71, 49, 92);
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+}
+
+#boton1 {
+    background-color: var(--Color-Botones);
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    background-color: var(--blue-chill);
+}
+
+#boton1:hover {
+    background-color: #392f42;
+}
+.form-select{
+   border: 1px solid rgb(71, 49, 92);
+   height: 70%;
+}
+.logo-registrar{
+    margin-bottom: 10px;
+}
+/* Media Queries para hacer el diseño responsivo */
+@media (min-width: 768px) {
+    .registrar-container {
+        max-width: 450px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .registrar-container {
+        max-width: 500px;
+        padding: 25px;
+    }
+}

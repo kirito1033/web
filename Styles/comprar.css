@@ -1,0 +1,97 @@
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #053543;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    background-color: var(--atoll);
+    border-radius: 50%;
+    border: 2px solid var(--Color-enlaces-menu);
+    display: inline-block;
+}
+
+.form-check-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--Color-enlaces-menu);
+    padding: 1rem;
+    border: 1px solid var(--gris-dark);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: var(--tarawera-dark);
+}
+
+.form-check-link:hover {
+    background-color: var(--blue-chill);
+    color: var(--Color-texto);
+}
+
+.form-check-label {
+    margin-left: 1rem;
+}
+
+.form-check-input.checked {
+    background-color: var(--bright-turquoise);
+    border-color: var(--bright-turquoise);
+}
+
+#direccion-texto {
+    display: none;
+}
+
+#direccion-input {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.metodo-de-pago {
+    margin-top: 2rem;
+}
+
+.tarjetas a, .otros-pagos a {
+    text-decoration: none;
+    color: var(--Color-enlaces-menu);
+}
+.comprar{
+    margin-top: 2%;
+    background-color: var(--Color--texto);
+    border-radius: 5px;
+    padding: 2%;
+}
+.comprar-resumen{
+    border-left: 1px solid var(--blue-chill);
+ 
+}
+.paga{
+    font-size: 20px;
+}
+.btn-comprar{
+    width: 50%;
+    background-color: var(--bright-turquoise);
+    color: var(--encabezados-piedepagina);
+    border: 1px solid var(--bright-turquoise);
+    border-radius: 5px;
+    height: 40px;
+}
+.btn-comprar:hover{
+    background-color: #04acac;
+    color: var(--Color--texto);
+    border: 1px solid #04acac ;
+}
+.card-img-top{
+    width: 45%;
+}

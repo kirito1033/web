@@ -1,0 +1,54 @@
+:root{
+    --encabezados-piedepagina: #020f1f;
+    --Color--texto: #ffffff;
+    --bright-turquoise: #04ebec;
+    --Color-enlaces-menu: #272727;
+    --atoll: #0a6069;
+    --blue-chill: #0f838c;
+    --gossamer: #048d94;
+    --tarawera: #053543;
+    --tarawera: #0b4454;
+    --ebony-clay: #2c3443;
+    --gris-:#5a626b;
+}
+
+body{
+    background-color: var(--encabezados-piedepagina);
+}
+
+body, div{
+    box-sizing: border-box;
+    margin: 8px;
+}
+
+#error__p{
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+#error{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color--texto);
+    margin-top: 5%;
+}
+
+.mb-3{
+    width: 50%;
+}
+.btn-ingresar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.ingresar{
+    width: 40%;
+    
+}

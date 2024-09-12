@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inovatech.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Styles/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header_nav">
+      <ul class="header__nav-ul">
+        <li class="header__nav-li">
+          <form class="header__nav-li--form">
+            <button class="btn btn-primary header__boton-abrir" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+              <i class="bi bi-list logo-menu"></i>
+            </button>
+            <div class="logo-celular">
+              <img class="logo" src="../img/logo-celular.png" alt="">
+            </div>
+            <div class="boton-buscar">
+              <input class="input-buscar" type="search" placeholder="Buscar productos">
+              <button type="button" class="buscar"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="carrito-compras">
+              <a href="agregar-carro.html" class="buscar"><i class="bi bi-cart"></i></a>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+              aria-labelledby="staticBackdropLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">MENU</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="nav nav-pills flex-column offcanvas__nav-ul ">
+                  <li class="nav-item offcanvas__nav-ul-li">
+                    <a href="../Pages/index.html"><i class="bi bi-house"></i>Inicio</a>
+                  </li>
+                  <li class="nav-item offcanvas__nav-ul-li">
+                    <a href="Notificaciones.html"> <i class="bi bi-bell"></i>Notificaciones</a>
+                  <li class="nav-item">
+                    <a href=""><i class="bi bi-dropbox"></i> Categorias</a></a>
+                  </li>
+        </li>
+        <li class="nav-item">
+          <a href="miscompras.html"> <i class="bi bi-bag"></i>Mis compras</a>
+        </li>
+        <li class="nav-item offcanvas__nav-ul-li">
+          <a href="oferta.html"> <i class="bi bi-tags"></i>ofertas</a>
+        </li>
+        <li class="nav-item offcanvas__nav-ul-li">
+          <a href="pqrs.html"><i class="bi bi-info-circle icon"></i>Ayuda / PQR</a>
+        </li>
+        <li>
+
+        </li>
+        <li class="nav-item offcanvas__nav-ul-li">
+          <a href="perfil.html"><i class="bi bi-person-circle"></i> Mi perfil</a></a>
+        </li>
+        <li class="nav-item offcanvas__nav-ul-li">
+          <a href="../Pages/login.html"><i class="bi bi-box-arrow-left"></i>Cerrar sesión</a>
+        </li>
+      </ul>
+      </div>
+      </div>
+      </form>
+      <div class="header-pc">
+        <ul class="nav nav-pills header-pc__nav-ul ">
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="../Pages/index.html"><i class="bi bi-house"></i>Inicio</a>
+          </li>
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="Notificaciones.html"> <i class="bi bi-bell"></i>Notificaciones</a>
+          </li>
+          <li class="nav-item dropdown header-pc__nav-ul-li">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              <i class="bi bi-dropbox"></i> Categorias</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Pages/ofertas.html">Ofertas</a></li>
+              <li><a class="dropdown-item" href="#">Laptops</a></li>
+              <li><a class="dropdown-item" href="#">Teléfonos inteligentes</a></li>
+              <li><a class="dropdown-item" href="#">Tabletas</a></li>
+              <li><a class="dropdown-item" href="#">Accesorios</a></li>
+              <li><a class="dropdown-item" href="#">Componentes de PC</a></li>
+              <li><a class="dropdown-item" href="#">Gaming</a></li>
+              <li><a class="dropdown-item" href="#">Redes y almacenamiento</a></li>
+              <li><a class="dropdown-item" href="#">Monitores y pantallas</a></li>
+              <li><a class="dropdown-item" href="#">Novedades</a></li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="miscompras.html"> <i class="bi bi-bag"></i>Mis compras</a>
+          </li>
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="ofertas.html"> <i class="bi bi-tags"></i>ofertas</a>
+          </li>
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="pqrs.html"><i class="bi bi-info-circle icon"></i>Ayuda / PQR</a>
+          </li>
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="perfil.html"><i class="bi bi-person-circle"></i> Mi perfil</a></a>
+          </li>
+          <li class="nav-item header-pc__nav-ul-li">
+            <a class="header__pc-li-link" href="../Pages/login.html"><i class="bi bi-box-arrow-left"></i>Cerrar sesión</a>
+          </li>
+        </ul>
+      </div>
+      </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="ofertas">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="../img/Banner_wide_credito.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/BannerEnvioExpress.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/BannerPersonalizaTuPC.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+  <main class="productos-ofertas">
+    <div class="container text-center">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner carrucel-productos">
+          <div class="col-12">
+            <h2 class="title-ofertas">Ofertas del dia</h3>
+          </div>
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <a href="../Pages/producto.html">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_755087-MLU78536135525_082024-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Diadema Gamer Profesional X-kim Thunderx, Pc Ps4 Xbox Switch Color Negro</h5>
+                    <div class="descuento">$1.699.900</div>
+                    <div class="precio">$864.900 <span class="color-verde">49% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_997517-MLA50159409366_062022-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Auriculares Gamer Maxell Force Pc, Play, Xbox, Mac, Celular Color Negro</h5>
+                    </a>
+                    <div class="descuento">$399.900</div>
+                    <div class="precio">$149.900 <span class="color-verde">50% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_958184-MLU75193472291_032024-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Logitech G203 Lightsync, Mouse Gamer Rgb, 6 Botones, 8000dpi Color Negro</h5>
+                    </a>
+                    <div class="descuento">$202.900</div>
+                    <div class="precio">$102.900<span class="color-verde"> 51% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_705617-MLU73117640700_122023-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Logitech G305 Lightspeed, Mouse Gamer Inalámbrico / 12000dpi Color White</h5>
+                    </a>
+                    <div class="descuento">$211.765</div>
+                    <div class="precio">$180.000 <span class="color-verde">15% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_867088-MLU77514228492_072024-AB.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Xiaomi POCO Poco X6 Pro 5G Dual SIM 512 GB amarillo 12 GB RAM</h5>
+                    </a>
+                    <div class="descuento">$2.199.900</div>
+                    <div class="precio">$1.299.900 <span class="color-verde">49% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_737597-MLU74696100538_022024-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Audífonos in-ear gamer inalámbricos Lenovo ThinkPlus GM2 PRO blanco con luz LED</h5>
+                    </a>
+                    <div class="descuento">$48.200</div>
+                    <div class="precio">$40.970 <span class="color-verde">15% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_655593-MLU72162526490_102023-AB.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Notebook Asus Ryzen 5 512gb 8gb Ram 15 Windows 11 Home Color Negro</h5>
+                    </a>
+                    <div class="descuento">$3.287.900</div>
+                    <div class="precio">$1.599.900 <span class="color-verde">51% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_886896-MCO76231485188_052024-AB.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portátil Lenovo Intel I5 12450h 16gb 512gb Ideapad Slim3 Fhd</h5>
+                    </a>
+                    <div class="descuento">$3.037.000</div>
+                    <div class="precio">$1.907.413 <span class="color-verde">37% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_796966-MLU73415031305_122023-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Televisor 43 Pulgadas Smart Android Ref. 43lo69</h5>
+                    </a>
+                    <div class="descuento">$1.699.900</div>
+                    <div class="precio">$929.900 <span class="color-verde">52% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_975043-MLU77517187669_072024-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Televisor LG 43 Pulgadas 108 Cm 43lm6370pdb Fhd Led Plano Smart Tv</h5>
+                    </a>
+                    <div class="descuento">$1.499.900</div>
+                    <div class="precio">$1.116.000 <span class="color-verde">25% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_952211-MLU72628856818_112023-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Google Tv Hyundai Smart 43 Fhd Comando De Voz</h5>
+                    </a>
+                    <div class="descuento">$1.469.900</div>
+                    <div class="precio">$979.900 <span class="color-verde">33% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_929167-MLU74996484125_032024-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Audifonos Inalambricos Bluetooth Gamer Deportivos M25 Tws 9d Color Negro</h5>
+                    </a>
+                    <div class="descuento">$35.900</div>
+                    <div class="precio">$29.797 <span class="color-verde">17% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_634057-MCO44664225229_012021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Pc Equipo Torre Gamer Amd Ryzen 5600g Ssd 240gb Ram 16gb</h5>
+                    </a>
+                    <div class="descuento">$3.179.900</div>
+                    <div class="precio">$2.179.900 <span class="color-verde">29% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_661948-MCO74610626031_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Gamer Amd Ryzen 7 5700x Ddr4 32gb Ssd 1tb Rtx 3050 8gb</h5>
+                    </a>
+                    <div class="descuento">$4.299.900</div>
+                    <div class="precio">$3.564.900 <span class="color-verde">58% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_914833-MLU76275326951_052024-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Audifono Xiaomi Redmi Buds 4 Active Bluetooth 5.3 Negro</h5>
+                    </a>
+                    <div class="descuento">$103.500</div>
+                    <div class="precio">$68.500 <span class="color-verde">42% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_860714-MLA45732454488_042021-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Memoria Micro Sd Kingston 64gb Canvas Select Plus Class10</h5>
+                    </a>
+                    <div class="descuento">$29.412</div>
+                    <div class="precio">$25.000 <span class="color-verde">15% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_837192-MLA41936842930_052020-AB.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Disco Solido 1 Tb Crucial Bx500</h5>
+                    </a>
+                    <div class="descuento">$338.000</div>
+                    <div class="precio">$268.900 <span class="color-verde">20% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_734214-MLA52010416947_102022-T.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Disco Sólido Ssd Interno Kingston Nv2 Snv2s/1tb</h5>
+                    </a>
+                    <div class="descuento">$490.900</div>
+                    <div class="precio">$345.000 <span class="color-verde">40% OFF</span></div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <main class="productos-ofertas">
+    <div class="container text-center">
+      <div id="carousel2" class="carousel slide">
+        <div class="carousel-inner carrucel-productos">
+          <div class="col-12">
+            <h2 class="title-ofertas">Celulares</h3>
+          </div>
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_946747-MLA74807971101_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Honor Magic5 Lite Dual SIM 256 GB plata titanio 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$869.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_755098-MLA46968358876_082021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">ZTE Blade A5 2020 Dual SIM 32 GB verde 2 GB RAM</h5>
+                    </a>
+                    <div class="precio">$219.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_968274-MLA73866472412_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Xiaomi POCO Poco X6 5G Dual SIM 256 GB azul 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$959.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_660762-MLA74048129932_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Xiaomi POCO Poco X6 Pro 5G Dual SIM 512 GB negro 12 GB RAM</h5>
+                    </a>
+                    <div class="precio">$1.299.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_827439-MLU69141802500_042023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Samsung Galaxy S23 Ultra (eSIM) 5G Dual SIM 256 GB phantom black 12 GB RAM</h5>
+                    </a>
+                    <div class="precio">$3.484.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_892158-CBT78229406088_082024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">2024 Chevvy Teléfono Inteligente Android Barato15 Promax16gb</h5>
+                    </a>
+                    <div class="precio">$270.033</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_767731-MLA71782898424_092023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Apple iPhone 15 (128 GB) - Verde</h5>
+                    </a>
+                    <div class="precio">$3.219.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_704144-MLA74806234609_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Xiaomi 13T Pro Dual SIM 512 GB negro 12 GB RAM</h5>
+                    </a>
+                    <div class="precio">$2.429.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_918178-MLA71783088444_092023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Apple iPhone 15 Pro (128 GB) - Titanio Azu</h5>
+                    </a>
+                    <div class="precio">$4.149.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_656404-MLA76511207126_052024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Samsung Galaxy A15 5G 5G 256 GB azul claro 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$632.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_951122-MLA77288124103_062024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Infinix Note 40 Pro Dual SIM 256 GB dorado 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$962.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_668543-MLA75547177771_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Samsung Galaxy A15 4G Dual SIM 256 GB azul oscuro 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$29.797</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_967030-MLA75913674860_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Tecno Spark 20 Pro Plus 256 GB Negro 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$750.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_740084-MLU78233986644_082024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Honor X8a Dual SIM 256 GB plata estelar 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$644.927</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_907669-MLU75370564948_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Moto G34 5G 256 GB Negro meteorito 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$659.500</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_888989-MLA74781934209_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Google Pixel 7 Pro 128 GB obsidiana 12 GB RAM</h5>
+                    </a>
+                    <div class="precio">$25.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_883592-MLU77440778408_072024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Tecno Spark Go 2024 4+128 Gb Color Blanco</h5>
+                    </a>
+                    <div class="precio">$364.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_748071-MLA78197516707_082024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Infinix Note 40 (NFC) Dual SIM 256 GB dorado 8 GB RAM</h5>
+                    </a>
+                    <div class="precio">$775.899</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <main class="productos-ofertas">
+    <div class="container text-center">
+      <div id="carousel3" class="carousel slide">
+        <div class="carousel-inner carrucel-productos">
+          <div class="col-12">
+            <h2 class="title-ofertas">Portatiles</h2>
+          </div>
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_676170-MLA74065928204_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Potátil 245 G9 color negro 8GB de Ram - 256GB SSD - AMD Ryzen 3</h5>
+                    </a>
+                    <div class="precio">$1.041.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_704146-MLA48265216107_112021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Potátil IdeaPad S145 15.6" color platinum gray 4GB de Ram - 1TB HDD - Intel Core i3</h5>
+                    </a>
+                    <div class="precio">$2.359.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_831543-MLU77130790962_062024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Laptop Hp Pavilion X360 14-ek0008la I5-1235u 8gb 512gb Win11</h5>
+                    </a>
+                    <div class="precio">$2.349.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_832980-MLA72386770514_102023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Potátil Inspiron 3520 15.6" color plata 16GB de Ram - 512GB SSD - Intel Core i7</h5>
+                    </a>
+                    <div class="precio">$2.439.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_708839-MLA51356236557_082022-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Macbook Air Chip M2 2022 13.6" Color Midnight 8Gb de Ram 256Gb Ssd Apple</h5>
+                    </a>
+                    <div class="precio">$4.249.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_924456-MLU74970438756_032024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Computador Portatil Asus X1504za Core I5 1235u 16gb 512gb Color Azul</h5>
+                    </a>
+                    <div class="precio">$1.829.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_681966-MLA71582946272_092023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Potátil VivoBook M3504YA-BQ184 color negro 16GB de Ram - 1TB SSD - AMD Ryzen 7</h5>
+                    </a>
+                    <div class="precio">$2.449.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_994662-MLU74507955774_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portátil Lenovo Intel I5 12450h 16gb 512gb Ideapad Slim3 Fhd</h5>
+                    </a>
+                    <div class="precio">$2.358.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_746357-MLA74805957515_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Potátil Inspiron 3511 15.6" color negro 8GB de Ram - 256GB SSD - Intel Core i5</h5>
+                    </a>
+                    <div class="precio">$1.850.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_668197-MLU73885094429_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Asus Rog Strix G16 Gaming G614 Eclipse Gray Intel Core I7 13650hx 16gb De Ram 512gb Ssd, Nvidia Geforce Rtx 4060 8gb, 165 Hz 1920x1200px Windows 11 Home</h5>
+                    </a>
+                    <div class="precio">$6.024.132</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_769521-MCO52754336375_122022-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Hp Amd Ryzen 5 5500u Ram 20gb Ssd 256gb 14-fq1052la</h5>
+                    </a>
+                    <div class="precio">$1.768.712</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_751329-MCO76271079405_052024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Lenovo Slim 3 15irh8 Core I7 13620h 16gb 512gb</h5>
+                    </a>
+                    <div class="precio">$2.705.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_680384-MLM48852286943_012022-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Gamer Msi Sword 15 A11uc I5 16gb 512gb Ssd Rtx3050</h5>
+                    </a>
+                    <div class="precio">$3.400.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_701171-MLU70777952886_082023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Hp 255 G10 Ryzen 5 7520u Ssd 512gb 8gb 15.6 Color Negro</h5>
+                    </a>
+                    <div class="precio">$1.850.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_755622-MLA73279643202_122023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">MacBook Pro MacBook Pro 14" M3 Pro 14" color space black 18GB de Ram - 512GB SSD - Apple M3</h5>
+                    </a>
+                    <div class="precio">$8.999.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_854851-MLU74326220457_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Hp Pavilion X360 Convertible 14-dy0503la + Microsoft 365 1yr Color Plateado</h5>
+                    </a>
+                    <div class="precio">$2.110.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_665677-MLA52964567676_122022-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Asus X1502za Core I5 12th, Ssd 512, 8gb</h5>
+                    </a>
+                    <div class="precio">$1.781.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_975059-MLU73998800673_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Portatil Lenovo Legion 5 Ryzen 7 7735h 16gb Rtx 4060 512gb Color Gris</h5>
+                    </a>
+                    <div class="precio">$5.499.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <main class="productos-ofertas">
+    <div class="container text-center">
+      <div id="carousel4" class="carousel slide">
+        <div class="carousel-inner carrucel-productos">
+          <div class="col-12">
+            <h2 class="title-ofertas">Cpu gamer</h3>
+          </div>
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_970837-MCO74828878076_032024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Pc Ryzen 7 5700g Ddr4 32gb 1tb Turbo Z8 Lite Kj</h5>
+                    </a>
+                    <div class="precio">$2.299.500</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_826985-MCO54250877405_032023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Gamer Core I7 12700 Gpu 2gb Hdmi 1tb 16gb Pc</h5>
+                    </a>
+                    <div class="precio">$3.419.910</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_760322-MCO71860941433_092023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Pc Ryzen 7 5700g Ddr4 32gb 1tb Turbo Z9 Rgb Ul</h5>
+                    </a>
+                    <div class="precio">$1.402.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_741218-MCO77999182670_082024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Pc Ryzen 5 7600x Ddr5 32gb Geforce Rtx 4060 8gb 1tb Cube Bg</h5>
+                    </a>
+                    <div class="precio">$5.459.500</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_785495-MCO76137984257_052024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Gamer Rgb Cpu Ryzen 7-5700g + Ram 16gb + 500gb Ssd @pd</h5>
+                    </a>
+                    <div class="precio">$2.249.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_806354-MCO73988269467_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Intel Celeron N4000 Uhd 600 1tb 8gb Pc</h5>
+                    </a>
+                    <div class="precio">$809.910</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_846536-MCO75172197608_032024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Computador Intel Core I7 10700 Uhd 630 512gb 32gb Led 22 Pc</h5>
+                    </a>
+                    <div class="precio">$2.834.910</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_605026-MCO75662524724_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Gamer Argb Intel Core I7 12700 + 16gb + 512m.2 + B760m</h5>
+                    </a>
+                    <div class="precio">$2.789.100</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_729250-MCO76250746769_052024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Computador Tecnología Intel Core I7-3770 (3.9ghz), 8gb, 1tb</h5>
+                    </a>
+                    <div class="precio">$1.299.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_747314-MCO75705365768_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Gamer Amd Athlon 3000g + 8gb + Ssd 512 Vega 3 @pd</h5>
+                    </a>
+                    <div class="precio">$981.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_794017-MCO75840844295_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Gamer 3050 Msi + I7 12700 + 16gb + 512m.2 + B760m</h5>
+                    </a>
+                    <div class="precio">$3.626.100</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_770383-MCO54244799736_032023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Intel Celeron G5900 Uhd 610 1tb 8gb Pc</h5>
+                    </a>
+                    <div class="precio">$944.910</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_634057-MCO44664225229_012021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Pc Equipo Torre Gamer Amd Ryzen 5600g Ssd 240gb Ram 16gb</h5>
+                    </a>
+                    <div class="precio">$2.179.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_661948-MCO74610626031_022024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Gamer Amd Ryzen 7 5700x Ddr4 32gb Ssd 1tb Rtx 3050 8gb</h5>
+                    </a>
+                    <div class="precio">$3.564.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_794017-MCO75840844295_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Gamer 3050 Msi + I7 12700 + 16gb + 512m.2 + B760m</h5>
+                    </a>
+                    <div class="precio">$3.626.100</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_824802-MCO70459106623_072023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Gamer Ryzen 5 5600g Vega 7 1tb 8gb Led 22 Pc</h5>
+                    </a>
+                    <div class="precio">$2.024.910</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_845896-MCO77601633095_072024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Gamer Ryzen 5 8600g Radeon 500gb 32gb Led 22 Pc</h5>
+                    </a>
+                    <div class="precio">$2.849.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_811940-MCO54251327774_032023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Torre Cpu Gamer Ryzen 7 5800x Gpu 2gb Hdmi 512gb 32gb Pc</h5>
+                    </a>
+                    <div class="precio">$3.149.910</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <main class="productos-ofertas">
+    <div class="container text-center">
+      <div id="carousel5" class="carousel slide">
+        <div class="carousel-inner carrucel-productos">
+          <div class="col-12">
+            <h2 class="title-ofertas">Pantallas</h3>
+          </div>
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_755496-MLU76217580471_052024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor LG 24 Ips Ajustable Fhd Freesync 75hz Hdmi 24mp450-b Color Negro 100V/240V</h5>
+                    </a>
+                    <div class="precio">$499.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_664886-MLU72645104939_112023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor LG 32UN550 31.5" Panel VA, UHD 4K, HDMI, DisplayPort</h5>
+                    </a>
+                    <div class="precio">$1.907.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_730320-MLU73129841276_122023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Asus Proart Display 27 Ips Wqhd 2560x1440 Pa278qv Color Negro 100V/240V</h5>
+                    </a>
+                    <div class="precio">$1.523.136</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_917168-MLM46852946694_072021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Acer R240hy Bidx 24 Ips Hdmi Dvi Vga Widescreen Monitor</h5>
+                    </a>
+                    <div class="precio">$530.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_620572-MLU70919456337_082023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Gamer Acer Nitro Kg241y 24 Full Hd 1920x1080 165hz Negro</h5>
+                    </a>
+                    <div class="precio">$599.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_979459-MCO75507784745_032024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Gamer 4k Uhd Pantalla Ips 27 Hdr10 Vesa Koorui</h5>
+                    </a>
+                    <div class="precio">$997.630</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_816442-MCO45581434487_042021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Acer Ips 1080p Freesync Gamer</h5>
+                    </a>
+                    <div class="precio">$519.920</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_863194-CBT68997642699_042023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Portátil De 15.6 Pulgadas 4k Ips 3840x2160 60hz</h5>
+                    </a>
+                    <div class="precio">$2.001.518</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_872045-MLA69236946520_052023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor gamer Dell S2722QC TFT LCD 27" blanco y negro 100V/240V</h5>
+                    </a>
+                    <div class="precio">$1.916.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_777477-MCO71213812608_082023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Gamer Full Hd 22' 1920*1080p 75 Hz Pantalla Led Koor</h5>
+                    </a>
+                    <div class="precio">$492.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_850967-MLB44386543153_122020-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Acer Xz270 240 Hz de 27 pulgadas, pantalla curva de 1 ms, sincronización de anuncios, Full HD</h5>
+                    </a>
+                    <div class="precio">$979.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_925113-MLA46374800255_062021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Pantalla Monitor Gamer Asus Va24ehey Led 23.8 75hz Ips Fhd</h5>
+                    </a>
+                    <div class="precio">$479.200 </div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 cards">
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_766652-MLU75587293173_042024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Sceptre u275w-upt 4k IPS 27'' UHD 70hz 99% RGB con Altavoces Integrados</h5>
+                    </a>
+                    <div class="precio">$948.000</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_816442-MCO45581434487_042021-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Acer 22 Pulgada Pantalla Ips 1080 Freesync Pc Gaming</h5>
+                    </a>
+                    <div class="precio">$519.9200</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_818627-MCO78454676593_082024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Dell S2722qc 4k Usb-c De 27 Pulgadas: Pantalla Uhd</h5>
+                    </a>
+                    <div class="precio">$1.916.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_813349-MLU74126730069_012024-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Led para videojuegos Dell S2421hgf de 23,8 pulgadas</h5>
+                    </a>
+                    <div class="precio">$1.270.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_757455-MLM48909420211_012022-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor Gamer Lg34wp65c-b Curvo 4k Ulltrawide 160hz Negro</h5>
+                    </a>
+                    <div class="precio">$2.122.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="https://http2.mlstatic.com/D_Q_NP_2X_928738-MCO73285805649_122023-V.webp" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <a href="">
+                      <h5 class="card-title">Monitor LG 27mp400-b Pantalla Ips Full Hd 1920 X 1080</h5>
+                    </a>
+                    <div class="precio">$918.900</div>
+                    <div class="color-verde">Envio gratis</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel5" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel5" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-12 cards">
+        <div class="col informacion">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-xs logo-footer">
+                  <i class="bi bi-info-circle logo-info"></i>
+              </div>
+              <div class="col">
+                <div class="pregunta">
+                  <p>¿Tienes preguntas? Comunícate con nosotros!</p>
+                </div>
+                <div class="contacto">
+                  <p class="contacto">PBX - WhatsApp: +57 3245750626</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="encuentrano">
+            <p class="encuentranos">Encuéntranos en:</p>
+            <p>Cra 15 # 768 - 05 Local 262 Centro De Alta Tecnología
+              Bogotá - Colombia</p>
+          </div>
+          <div class="ubicacion">
+          
+          </div>
+          <div class="redes">
+            <ul class="d-flex ul-icon">
+              <li>
+                <a class="fab fa-facebook" target="_blank" href="#"></a>
+              </li>
+              <li>
+                <a class="fab fa-whatsapp mobile" target="_blank"  href="#"></a>
+              </li>
+              <li>
+                <a class="fab fa-linkedin" target="_blank"  href="#"></a>
+              </li>
+              <li>
+                <a class="fab fa-instagram" target="_blank"  href="#"></a>
+              </li>
+              <li>
+                <a class="fab fa-tiktok" target="_blank"  href="#"></a>
+              </li>
+              <li>
+                <a class="fab fa-youtube" target="_blank"  href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="tienda-ul">
+            <li class="tienda-li"><a class="tienda" href="index.html">Tienda</a></li>
+            <li class="tienda-li"><a class="tienda" href="condiciones.html">Términos y condiciones</a></li>
+            <li class="tienda-li"><a class="tienda" href="Chat-ayuda.html">Soporte Online</a></li>
+            <li class="tienda-li"><a class="tienda" href="perfil.html">Mi cuenta</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h5>Preguntas Frecuentes</h5>
+          <ul class="preguntas">
+            <li><a class="preguntas-link" href="Preguntas-frecuente.html">¿Qué métodos de pago puedo utilizar?</a></li>
+            <li><a class="preguntas-link" href="Preguntas-frecuente.html">¿Cuánto se demoran en entregar mi producto?</a></li>
+            <li><a  class="preguntas-link" href="Preguntas-frecuente.html">¿Hacen envíos a todo el país?</a></li>
+            <li><a  class="preguntas-link" href="Preguntas-frecuente.html">¿Cuánto tiempo de garantía tiene mi producto?</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <p class="Copyright">Copyright Inovatech - 2024. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
